@@ -72,7 +72,7 @@ export class HomePage implements OnInit {
       if (ctrl.fnac.invalid) missing.push('Fecha de nacimiento');
 
       const toast = await this.toastCtrl.create({
-        message: `Favor completar: ${missing.join(', ')}`,
+        message: `Por favor completa: ${missing.join(', ')}`,
         color: 'danger',
         duration: 4000,
         position: 'middle',
